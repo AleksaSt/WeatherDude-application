@@ -1,0 +1,87 @@
+/* Navbar */
+
+.weatherApp {
+  font-size: 22px;
+  color: #6495ED; 
+  font-family: 'Courier Prime', monospace;
+  /* text-decoration: underline; */
+  text-decoration-color: #6495ED;
+  margin-right: 0px;
+  text-decoration: 'none';
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+}
+
+@media screen and (min-width: 376px) and (max-width: 599px){
+  .weatherApp {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .weatherApp {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .weatherApp {
+    font-size: 30px;
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+  .weatherApp {
+    font-size: 34px;
+    margin-left: 4vw;
+  }
+
+  .nav {
+    left: 30vw;
+  }
+
+  .navMain {
+    margin-left: 30px;
+  }
+
+  .icon {
+    height: 47px;
+    width: 47px;
+  } 
+}
+
+@media screen and (min-width: 1224px) {
+   .weatherApp {
+    font-size: 36px;
+    margin-left: 3vw;
+  }
+
+  .icon {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .nav {
+    left: 45vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  
+}
+
+@media screen and (min-width: 1680px) {
+  .weatherApp {
+    margin-left: 2vw;
+  }
+
+  .nav {
+    left: 60vw;
+  }
+}

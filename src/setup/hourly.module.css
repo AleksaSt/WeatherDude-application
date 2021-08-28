@@ -1,0 +1,202 @@
+.hourlyWeatherCard {
+  top: 66px;
+  height: 110vh;
+  background-attachment: fixed;
+  background-position: sticky;
+  width: 100vw;
+  background-image: url('./assets/blue-sky-30.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  overflow: scroll;
+}
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  position: relative; 
+  margin-bottom: 10px;
+}
+
+.weatherCardHourlyMainDetails {
+  font-weight: bold;
+  font-size: 15px;
+  opacity: 0.8;
+  border-radius: 25px; 
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px; 
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.details:hover {
+  text-decoration: underline;
+  text-decoration-color: #6495ED;
+}
+
+.hourlyWeatherCardMain {
+  text-align: center;
+  font-size: 33px;
+  color: white;
+  text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px darkblue;
+}
+
+.hourlyNextThreeHours {
+  font-size: 20px;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px darkblue;
+  text-align: center;
+}
+
+.hourlyLineClassMain {
+  position: absolute;
+  top: 60px;
+  width: 88.9vw;
+  height: 4px;
+  background-color: white;
+}
+
+.hourlyDateBuilder {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-align: center;
+  margin-top: 25px;
+  font-size: 18px;
+  font-family: 'Montserrat', 'Lato';
+  background-color: #f8f9fa;
+  color: black;
+  width: 100vw;
+  position: absolute;
+  border-radius: 2px;
+}
+
+.hourlySpinnerContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.hourlySpinner {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  z-index: 5;
+  top: 280px;
+}
+
+@media screen and (min-width: 300px) {
+  .weatherCardHourlyMainDetails {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 11px;
+  }
+
+  .hourlyLineClassMain {
+    top: 60px;
+    width: 86vw;
+  }
+}
+
+@media screen and (min-width: 350px) {
+  .weatherCardHourlyMainDetails {
+    justify-content: space-between;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .weatherCardHourlyMainDetails {
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .weatherCardHourlyMainDetails {
+    font-size: 20px;
+  }
+
+  .hourlyLineClassMain {
+    width: 93vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .weatherCardHourlyMainDetails {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 25px;
+  }
+
+  .hourlyLineClassMain {
+    width: 94.5vw;
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+  .weatherCardHourlyMainDetails {
+    padding-left: 120px;
+    padding-right: 120px;
+    justify-content: space-between;
+    font-size: 23px;
+  }
+
+  .hourlyLineClassMain {
+    top: 82px;
+    width: 95.5vw;
+  }
+
+  .hourlyWeatherCardMain {
+    font-size: 50px;
+  }
+
+  .hourlyNextThreeHours {
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .weatherCardHourlyMainDetails {
+    padding-top: 10px; 
+    padding-left: 120px;
+    padding-right: 120px;
+    justify-content: space-between;
+    font-size: 30px;
+  }
+
+  .hourlyWeatherCardMain {
+    font-size: 63px;
+  }
+
+  .hourlyNextThreeHours {
+    font-size: 28px;
+  }
+
+  .hourlyLineClassMain {
+    top: 97px;
+    width: 96.5vw;
+    height: 5px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .weatherCardHourlyMainDetails {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .hourlyLineClassMain {
+    width: 97vw;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .weatherCardHourlyMainDetails {
+    padding-left: 240px;
+    padding-right: 240px;
+  }
+}
