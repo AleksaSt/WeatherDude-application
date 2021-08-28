@@ -9,7 +9,7 @@ const NavbarPage = () => {
     <>
       <Navbar bg="light" expand="lg" fixed="top" className={navbarCSS.mainNav}>
         <Link to="/"><img className={navbarCSS.icon} src="https://images-na.ssl-images-amazon.com/images/I/81%2BeUvsHXoL.png" alt="No Logo Available"/></Link>
-          <Navbar.Brand className={navbarCSS.weatherApp} href="/">WeatherDudeTEST<AiOutlineCloud style={{color:'#6495ED'}}/></Navbar.Brand>
+          <Navbar.Brand className={navbarCSS.weatherApp} href="/">WeatherDude<AiOutlineCloud style={{color:'#6495ED'}}/></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto" className={navbarCSS.navMain}>

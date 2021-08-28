@@ -37,13 +37,12 @@ const CurrentWeatherData = () => {
         return res.json()
       })
       .then(result => { 
-        console.log(result)
         setWeather(result)
         setShow(true)
         setLoading(false)
       })
       .catch(err => {
-        setError(err.message);
+        setError(true);
         setWeather({})
         setLoading(false)
       })      
