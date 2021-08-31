@@ -17,7 +17,6 @@ const api = {
   base: 'https://api.openweathermap.org/data/2.5/' 
 }
 
-
 const CurrentWeatherData = () => {
   
   const history = useHistory();
@@ -79,7 +78,7 @@ const CurrentWeatherData = () => {
   }
   const WeatherCard = () => {
     return <>
-    <Card className={indexCSS.weatherCard}>              
+    <Card className={(typeof `${weather.main}` != 'undefined') ? ((`${weather.main.temp}` < 16) ? `${indexCSS.weatherCardTwo}` : `${indexCSS.weatherCard}`) : `${indexCSS.weatherCard}`}>              
       <Card.Body>
         <Card.Title></Card.Title>
           {(typeof weather.main != 'undefined') ? (

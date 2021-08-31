@@ -33,7 +33,7 @@ input:focus{
   padding-top: 7px;
   padding-bottom: 7px;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 26px;
   font-size: 18px;
   font-family: 'Montserrat', 'Lato';
   background-color: #f8f9fa;
@@ -51,6 +51,16 @@ input:focus{
   background-position: sticky;
   width: 100vw;
   background-image: url('./assets/blue-sky-30.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  overflow: scroll;  
+}
+.weatherCardWeeklyTwo {
+  top: 66px;
+  background-attachment: fixed;
+  background-position: sticky;
+  width: 100vw;
+  background-image: url('./assets/cold-weather.jpg');
   background-repeat:no-repeat;
   background-size: cover;
   overflow: scroll;  
@@ -151,10 +161,6 @@ input:focus{
 }
   
 @media screen and (min-width: 768px) {
-  /* .time {
-    font-size: 25px;
-    top: 10.5vh;  
-  } */
 
   input[type=text] {
     width: 710px;

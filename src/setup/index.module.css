@@ -42,7 +42,7 @@ input:focus{
   padding-top: 7px;
   padding-bottom: 7px;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 26px;
   font-size: 18px;
   font-family: 'Montserrat', 'Lato';
   background-color: #f8f9fa;
@@ -50,6 +50,7 @@ input:focus{
   width: 100vw;
   position: absolute;
   border-radius: 2px;
+  z-index: 20;
 }
 
 .weatherTownAndCountry {
@@ -66,7 +67,21 @@ input:focus{
   background-image: url('./assets/blue-sky-30.jpg');
   background-repeat:no-repeat;
   background-size: cover;
-  overflow: hidden;  
+  overflow: hidden;
+  z-index: 1;  
+}
+
+.weatherCardTwo {
+  background-image: url('./assets/cold-weather.jpg');
+  top: 66px;
+  height: 110vh;
+  background-attachment: fixed;
+  background-position: sticky;
+  width: 100vw;
+  background-repeat:no-repeat;
+  background-size: cover;
+  overflow: hidden; 
+  z-index: 1;   
 }
   
 .weatherCardFont {
@@ -173,8 +188,6 @@ input:focus{
   
 /* Current Weather Page Animations */
   
-/* Animations */
-  
 @keyframes slide {
   from{transform: translateY(-300px);}
   to{transform: translateY(-40px);}
@@ -182,15 +195,18 @@ input:focus{
 
 /* Responsive CSS Resolutions */
 
-@media screen and (min-width: 270px) and (max-width: 300px){
+@media screen and (min-width: 270px) and (max-width: 350px){
   input[type=text] {
-    width: 220px;
+    width: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
-@media screen and (min-width: 301px) and (max-width: 340px){
-  input[type=text] {
-    width: 250px;
+@media screen and (min-width: 600px) {
+  .lineTwo {
+  
+    width: 84%;
   }
 }
 
@@ -221,12 +237,12 @@ input:focus{
   .minMaxTemperature {
     font-size: 45px;
     margin-top: -145px;
-    right: 40px;
+    right: 20px;
   }
     
   .line {
     top: 74px;
-    width: 100px;
+    width: 13vw;
   }
 
   .details {
@@ -234,13 +250,14 @@ input:focus{
   }
 
   .lineTwo {
-    margin-right: 20px;
+    margin-right: 0px;
     height: 4px;
     margin-top: 25px;
+    width: 82%;
   }
 
   .detailsWeather {
-    margin-right: 20px;
+    margin-right: 0px;
   }
 }
 
@@ -270,7 +287,7 @@ input:focus{
     
   .line {
     top: 80px;
-    width: 110px;
+    width: 11vw;
   }
 
   .details {
@@ -278,8 +295,6 @@ input:focus{
   }
 
   .lineTwo {
-    margin-right: 20px;
-    margin-top: 25px;
     width: 85%;
   }
 
@@ -299,6 +314,12 @@ input:focus{
     width: 70vw;
   }
 
+  .weatherCardTwo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+  }
+
   .spinner {
     height: 90px;
     width: 90px;
@@ -310,6 +331,10 @@ input:focus{
     right: 20px;
   }
 
+  .line {
+    width: 9vw;
+  }
+
   .lineTwo {
     width: 87%;
     margin-right: 0px;
@@ -317,6 +342,28 @@ input:focus{
 
   .detailsWeather {
     margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .line {
+    width: 7.7vw;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .line {
+    width: 6.5vw;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .weatherCardTwo {
+    background-position:  100px -170px;
+  }
+
+  .line {
+    width: 6vw;
   }
 }
 

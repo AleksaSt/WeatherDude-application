@@ -90,13 +90,18 @@ const HourlyWeather = () => {
         <div className={hourlyCSS.hourlyNextThreeHours}>Weather every next 3 hours</div>
           {(typeof hourly != 'undefined') ? (
             <div>{hourly.map(hour => (
-              <div className={hourlyCSS.weatherCardHourlyMainDetails}>
-                <div className={hourlyCSS.details}>Temperature: {Math.round(hour.temp - 273.15)}°C</div>
-                <div className={hourlyCSS.details}>Feels Like: {hour.feels_like}°C</div>
-                <div className={hourlyCSS.details}>Pressure: {hour.pressure }hPa</div>
-                <div className={hourlyCSS.details}>Humidity: {hour.humidity}%</div>
-                <div className={hourlyCSS.details}>Visibility: {hour.visibility }m</div>
-                <div className={hourlyCSS.details}>Wind Speed: {hour.wind_speed}m/s</div>
+              <div>
+                <div className={hourlyCSS.detailsMain}>
+                  <div className={hourlyCSS.details}>Temperature: {Math.round(hour.temp - 273.15)}°C</div>
+                  <div className={hourlyCSS.details}>Feels Like: {Math.round(hour.feels_like - 273.15)}°C</div>
+                </div>
+                <div className={hourlyCSS.weatherCardHourlyMainDetails}>
+                  <div>Pressure: {hour.pressure }hPa</div>
+                  <div>Humidity: {hour.humidity}%</div>
+                  <div>Visibility: {hour.visibility }m</div>
+                  <div>Wind Speed: {hour.wind_speed}m/s</div>
+                </div>
+                <div className={hourlyCSS.detailsLine}></div>
               </div>
             ))}</div>
           ) : ('')}

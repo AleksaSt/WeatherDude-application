@@ -9,6 +9,7 @@
   background-size: cover;
   overflow: scroll;
 }
+
 .inputContainer {
   display: flex;
   justify-content: center;
@@ -31,7 +32,7 @@
   margin-right: auto;
 }
 
-.details:hover {
+.weatherCardHourlyMainDetails:hover {
   text-decoration: underline;
   text-decoration-color: #6495ED;
 }
@@ -48,6 +49,26 @@
   text-transform: capitalize;
   text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px darkblue;
   text-align: center;
+}
+
+.detailsMain {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details {
+  font-size: 18px;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px darkblue;
+  color: white;
+  margin-top: 10px;
+}
+
+.detailsLine {
+  margin-top: 20px;
+  width: 89vw;
+  height: 2px;
+  background-color: white;
 }
 
 .hourlyLineClassMain {
@@ -86,6 +107,23 @@
   top: 280px;
 }
 
+@media screen and (min-width: 270px) {
+  .weatherCardHourlyMainDetails {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 9px;
+  }
+
+  .detailsLine {
+    width: 84.7vw;
+  }
+
+  .hourlyLineClassMain {
+    top: 60px;
+    width: 84.7vw;
+  }
+}
+
 @media screen and (min-width: 300px) {
   .weatherCardHourlyMainDetails {
     padding-left: 20px;
@@ -120,6 +158,14 @@
   }
 
   .hourlyLineClassMain {
+    width: 93vw;
+  }
+
+  .details {
+    font-size: 25px;
+  }
+
+  .detailsLine {
     width: 93vw;
   }
 }
@@ -157,13 +203,22 @@
   .hourlyNextThreeHours {
     font-size: 23px;
   }
+
+  .details {
+    font-size: 30px;
+  }
+
+  .detailsLine {
+    width: 95.8vw;
+    height: 3px;
+  }
 }
 
 @media screen and (min-width: 1224px) {
   .weatherCardHourlyMainDetails {
     padding-top: 10px; 
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 40px;
+    padding-right: 40px;
     justify-content: space-between;
     font-size: 30px;
   }
@@ -181,12 +236,24 @@
     width: 96.5vw;
     height: 5px;
   }
+
+  .details {
+    font-size: 38px;
+  }
+
+  .hourlyWeatherCard {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+    overflow-x:hidden;
+  }
+
 }
 
 @media screen and (min-width: 1440px) {
   .weatherCardHourlyMainDetails {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .hourlyLineClassMain {
@@ -196,7 +263,7 @@
 
 @media screen and (min-width: 1680px) {
   .weatherCardHourlyMainDetails {
-    padding-left: 240px;
-    padding-right: 240px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }

@@ -4,7 +4,6 @@
   font-size: 22px;
   color: #6495ED; 
   font-family: 'Courier Prime', monospace;
-  /* text-decoration: underline; */
   text-decoration-color: #6495ED;
   margin-right: 0px;
   text-decoration: 'none';
@@ -13,6 +12,12 @@
 .icon {
   height: 40px;
   width: 40px;
+}
+
+@media screen and (min-width: 260px) and (max-width: 300px){
+  .weatherApp {
+    font-size: 15px;
+  }
 }
 
 @media screen and (min-width: 376px) and (max-width: 599px){
