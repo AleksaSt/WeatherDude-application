@@ -121,6 +121,7 @@
 
   .details {
     font-size: 17px;
+    margin-left: 14px;
   }
 
   .detailsLine {
@@ -152,13 +153,24 @@
 
   .details {
     font-size: 21px;
+    margin-left: 10px;
   }
 
+}
+
+@media screen and (min-width: 330px) {
+  .details {
+    margin-left: 15px;
+  }
 }
 
 @media screen and (min-width: 350px) {
   .weatherCardHourlyMainDetails {
     font-size: 14px;
+  }
+
+  .details {
+    margin-left: 20px;
   }
 }
 
@@ -167,6 +179,10 @@
     padding-left: 25px;
     padding-right: 25px;
     font-size: 15px;
+  }
+
+  .details {
+    margin-left: 0px;
   }
 }
 

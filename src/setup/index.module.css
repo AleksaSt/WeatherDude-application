@@ -202,10 +202,6 @@ input:focus{
     margin-right: 20px;
   }
 
-  .weatherCardTwo {
-    background-position: center;  
-  }
-
   .detailsWeather div {
     font-size: 15px;
   }
@@ -280,10 +276,6 @@ input:focus{
 @media screen and (min-width: 768px) {
   input[type=text] {
     width: 710px;
-  }
-
-  .weatherCardTwo {
-    background-position: top;  
   }
 
   .spinner {
